@@ -1,39 +1,41 @@
-# nlp-project
-NLP-Assignment-1---Text-Pipeline-Tokenization-Stopwords-Stemming-Lemmatization-
-This repository contains Assignment 1 of the SEC-D NLP assignment.
-The goal of this project is to apply a complete NLP preprocessing pipeline on a custom paragraph and print results at every step.
+🌟 Fine-Tuning a Pre-Trained LLM Using a Custom Dataset
+📌 NLP Assignment — Project 1
 
-📘 Project Overview
-This project performs the following steps:
+Submitted by: Harsh Kumar
 
-🔹 1. Tokenization
-Splitting a paragraph into individual words (tokens) so the computer can process text easily.
+📖 Project Overview
 
-🔹 2. Stopword Removal
-Removing common words like the, is, am, in, etc. that do not add meaningful information.
+This project demonstrates how to fine-tune a publicly available Large Language Model (LLM) using the Hugging Face Transformers library.
+The goal is to adapt a pre-trained model (such as BERT or DistilBERT) to a custom NLP task like:
 
-🔹 3. Stemming
-Reducing words to their root form by cutting off prefixes/suffixes.
-Example: playing → play, studies → studi
+Sentiment Analysis
 
-🔹 4. Lemmatization
-Converting words to their dictionary base form using grammatical rules.
-Example: studies → study, better → good
+Spam Detection
 
-🧪 Technologies Used
-Python
-NLTK (Natural Language Toolkit)
-Google Colab
-Jupyter Notebook
-📂 File Included
-NLP_Assignment1.ipynb – Complete code with step-by-step explanation
-🚀 How to Run This Project
-Option 1 — Run in Google Colab
-Click the link below to open the notebook directly in Colab:
+Topic Classification
 
-👉 Colab Link:
-"[https://colab.research.google.com/drive/1XjNBnW6IGRuDXxSZIynU2qUn8rIYEP8b?authuser=1#scrollTo=0R1IPli-usMy](https://colab.research.google.com/drive/1LvlJ0NKjW6slG3xjfVsRAZ7r4R20cVdS)"
+Question Classification
 
-Option 2 — Run Locally
-Install dependencies:
-pip install nltk
+The project includes dataset handling, preprocessing, loading a pre-trained model, training, evaluation, and saving the fine-tuned model.
+
+🧠 Objectives
+
+✔ Fine-tune a transformer-based LLM
+✔ Load and preprocess a labeled text dataset
+✔ Tokenize text inputs using AutoTokenizer
+✔ Train using Trainer API
+✔ Evaluate performance (Accuracy, Loss)
+✔ Save the fine-tuned model for future use
+
+🗂️ Project Structure
+📁 Project/
+│── fine_tune_llm.py        # Main training script
+│── dataset.csv             # Custom dataset (text + labels)
+│── README.md               # Documentation
+│── saved_model/            # Folder where fine-tuned model will be saved
+
+🧩 Key Dependencies
+
+Make sure the following libraries are installed:
+
+pip install transformers datasets torch scikit-learn pandas
